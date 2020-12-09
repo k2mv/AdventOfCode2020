@@ -6,4 +6,6 @@ I read the prompt for Part 2 wrong (thinking that it was the sum of the first an
 
 As a result, I ended up reaching the same (incorrect) answer several times, causing me to attempt to brute force the answer using the (correctly identified) range length and starting index, getting the same incorrect answer several times, before reading the prompt one more time and cursing myself out.
 
+In an ideal world, `width_search()` would have been written differently, and the answer would have come out of that instead of the mess of hard coded numbers at the end.
+
 Learn from my suffering.
