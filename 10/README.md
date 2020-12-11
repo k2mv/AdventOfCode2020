@@ -2,7 +2,7 @@
 
 **Part 1** was a breeze.
 
-**Part 2** was a 19 hour journey through the wilderness.  (I finally got a clean and simple answer, though.)
+**Part 2** was a 19 hour journey through the wilderness.  (I finally got a non-storage-based solution, though.)
 
 You'll find a running journal in the scratchpad section of Day 2.
 
