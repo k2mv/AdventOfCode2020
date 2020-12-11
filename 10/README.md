@@ -6,7 +6,7 @@
 
 You'll find a running journal in the scratchpad section of Day 2.
 
-Lessons learned:
+Lessons learned (or rather, reminded of):
 * Don't stay up more than like 90 minutes past midnight if it's just not happening.
 * Try first to separate what changes from what doesn't
 * And then try to separate what matters to the answer from what doesn't.
