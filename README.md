@@ -1,6 +1,6 @@
 # AdventOfCode2020
 
-"Solutions" for exercises on https://adventofcode.com/
+"Solutions" for exercises on https://adventofcode.com/2020
 
 If the code is here, then it got me the correct answer somehow.
 
