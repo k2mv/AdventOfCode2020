@@ -2,7 +2,7 @@
 
 **Part 1** was a breeze.
 
-**Part 2** was a 19 hour journey through the valley of the shadow of death.  (I finally got a clean and simple answer, though.)
+**Part 2** was a 19 hour journey through the wilderness.  (I finally got a clean and simple answer, though.)
 
 You'll find a running journal in the scratchpad section of Day 2.
 
