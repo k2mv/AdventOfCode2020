@@ -9,18 +9,19 @@ I've created a special slimmed-down and cleaned-up version of my **Part 2** at `
 How I arrived at my solution: (&#x1F6A8; _spoiler alert_ &#x1F6A8;)
 
 For two prime numbers (these are all prime numbers in the test/puzzle input) with no offset, they will line up for the first time at the product of the two numbers. 
-* _Buses 2 and 3 will first line up at time 6._
+* Buses 2 and 3 will first line up at time 6.
 
 Those two numbers will keep lining up at intervals at the product of those two numbers. 
-* _Buses 2 and 3 will line up at 6, 12, 18..._
+* Buses 2 and 3 will line up at 6, 12, 18...
 
 When you put an offset on one of the numbers, the initial correct base point will move - but the next correct point will still be the same distance away.
-* _If you want 3 to show up with an offset of 1 after an instance of 2, your first correct base point is now 2 (because 2 + 1 = 3)._
+* If you want bus 3 to show up with an offset of 1 after bus 2, your first correct base point is now 2 (because 2 + 1 = 3).
 * _(Note that when it moves, it moves backward!  &#x1F914;)_
-* _After 2, however, your next correct base point is 8 (8 + 1 = 9), and the next is 14 (14 + 1 = 15)...  Your base points are still 6 apart (i.e. 2 times 3)._
+* After 2, however, your next correct base point is 8 (8 + 1 = 9), and the next is 14 (14 + 1 = 15)...
+* Your base points remain 6 apart (i.e. bus 2 times bus 3).
 
 This means that if you want to start searching for a correct base point with your third bus after finding one with your first two buses:
-* you can start searching at the first correct base point you found (since you won't be able to line up three buses anytime before the first two buses line up for the first time)
+* you can start searching at the correct base point you found earlier (since you won't be able to line up three buses anytime before the first two buses line up for the first time), and
 * you can step forward in intervals of the product of the first two buses.
 
 Keep doing that, and the steps will soon get *thicc* enough that the calculation will finish by Christmas.
