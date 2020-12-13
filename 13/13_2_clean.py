@@ -16,7 +16,6 @@ def do_it3a(base_magnitude, next_bus, next_bus_offset):
 	mult = 0
 	while not done:
 		modulo = (base + next_bus_offset) % next_bus
-		#waiting = next_bus - modulo
 		if modulo == 0:
 			done = True
 			magnitude *= next_bus
