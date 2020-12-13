@@ -13,7 +13,6 @@ def do_it3a(base_magnitude, next_bus, next_bus_offset):
 	base = base_magnitude[0]
 	magnitude = base_magnitude[1]
 	done = False
-	mult = 0
 	while not done:
 		modulo = (base + next_bus_offset) % next_bus
 		if modulo == 0:
