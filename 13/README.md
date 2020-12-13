@@ -8,7 +8,7 @@ I've created a special slimmed-down and cleaned-up version of my **Part 2** at `
 
 How I arrived at my solution: (&#x1F6A8; _spoiler alert_ &#x1F6A8;)
 
-For two prime numbers (these are all prime numbers in the test/puzzle input) with no offset, they will line up for the first time at the product of the two numbers. 
+For two prime numbers (these are all prime numbers in the examples/puzzle input) with no offset, they will line up for the first time at the product of the two numbers. 
 * Buses 2 and 3 will first line up at time 6.
 
 Those two numbers will keep lining up at intervals at the product of those two numbers. 
