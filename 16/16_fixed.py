@@ -34,8 +34,7 @@ def process_input(lines):
                 pass
             else:
                 other = []
-                lsplit = l.split(',')
-                for ls in lsplit:
+                for ls in l.split(','):
                     other.append(int(ls))
                 nearby_tickets.append(other)
             
