@@ -24,8 +24,7 @@ def process_input(lines):
                 pass
             elif l != '\n':
                 your_ticket = []
-                lsplit = l.split(',')
-                for ls in lsplit:
+                for ls in l.split(','):
                     your_ticket.append(int(ls))
             else:
                 position = 2
