@@ -67,20 +67,22 @@ def create_valid_field_grid(fields, valid_tickets):
                     valid_field_grid[n][f] = False # this position cannot be this field
     return valid_field_grid
 
-def build_field_dict(fields, field_dict, valid_field_grid):
+def build_field_dict(fields, valid_field_grid):
     big_range = len(valid_field_grid)
-    for position in range(big_range):
-        counter = 0
-        selected_field = -1
-        if position not in field_dict.values():
-            for field in range(big_range):
-                if field not in field_dict.keys():
-                    if valid_field_grid[position][field]:
-                        counter += 1
-                        selected_field = field
-        if counter == 1: # deduced that this position can only be one field
-            field_dict[selected_field] = position
-    return field_dict, valid_field_grid
+    field_dict = {}
+    while len(field_dict) < big_range:
+        for position in range(big_range):
+            counter = 0
+            selected_field = -1
+            if position not in field_dict.values():
+                for field in range(big_range):
+                    if field not in field_dict.keys():
+                        if valid_field_grid[position][field]:
+                            counter += 1
+                            selected_field = field
+            if counter == 1: # deduced that this position can only be one field
+                field_dict[selected_field] = position
+    return field_dict
 
 def validate_against_fields(fields, num):
     valid = False
@@ -98,9 +100,7 @@ def validate_against_field(f, num):
 fields, your_ticket, nearby_tickets = process_input(lines)
 valid_tickets = filter_valid(fields, nearby_tickets)
 valid_field_grid = create_valid_field_grid(fields, valid_tickets)
-field_dict = {}
-while len(field_dict) < len(valid_field_grid):
-    build_field_dict(fields, field_dict, valid_field_grid)
+field_dict = build_field_dict(fields, valid_field_grid)
 print(field_dict)
 
 departures = 1
