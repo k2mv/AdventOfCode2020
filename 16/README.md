@@ -2,4 +2,4 @@
 
 *(inception horn)*
 
-To do: I should try to reorganize a cleaned-up **Part 2** that's easier to follow.
+A cleaned-up (refactored, variable-renamed) `16_clean.py` is now available, to make the **Part 2** code easier to follow.
