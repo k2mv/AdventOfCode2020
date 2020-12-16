@@ -90,10 +90,7 @@ def validate_against_fields(fields, num):
 
 def validate_against_field(f, num):
     valid = False
-    min = f[1][0]
-    hole_lower = f[1][1]
-    hole_upper = f[1][2]
-    max = f[1][3]
+    min, hole_lower, hole_upper, max = f[1]
     if num >= min and num <= max and (num <= hole_lower or num >= hole_upper):
         valid = True
     return valid
