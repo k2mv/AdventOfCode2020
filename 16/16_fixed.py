@@ -106,7 +106,7 @@ print(field_dict)
 departures = 1
 for f in range(len(fields)):
     if fields[f][0].startswith('departure'): # if field name starts w/departure
-        pos = field_dict[f] # find the field_dict key that refers to this field
+        pos = field_dict[f] # get the actual ticket position corresponding to this field
         departures *= your_ticket[pos] 
 print(departures)
 
