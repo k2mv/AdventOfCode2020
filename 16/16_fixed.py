@@ -52,7 +52,7 @@ def filter_valid(fields, nearby_tickets):
             valid_ticket_list.append(t)
     return valid_ticket_list
     
-def create_valid_valid_field_grid(fields, valid_tickets):
+def create_valid_field_grid(fields, valid_tickets):
     num_fields = len(fields)
     valid_field_grid = []
     for _ in range(num_fields):
@@ -100,7 +100,7 @@ def validate_against_field(f, num):
 
 fields, your_ticket, nearby_tickets = process_input(lines)
 valid_tickets = filter_valid(fields, nearby_tickets)
-valid_field_grid = create_valid_valid_field_grid(fields, valid_tickets)
+valid_field_grid = create_valid_field_grid(fields, valid_tickets)
 field_dict = {}
 while len(field_dict) < len(valid_field_grid):
     build_field_dict(fields, field_dict, valid_field_grid)
