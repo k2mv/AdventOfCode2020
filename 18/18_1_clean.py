@@ -41,8 +41,7 @@ def eval_line(line):
             while chunk[-1] == ')':
                 right_paren_count += 1
                 chunk = chunk[:-1]
-            right = int(chunk)
-            left = operate(operator, left, right)
+            left = operate(operator, left, int(chunk))
             for _ in range(right_paren_count):
                 right = left
                 left, operator = buffer.pop()
