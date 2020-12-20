@@ -55,7 +55,7 @@ It turns out that the two sets of 5-character strings are mutually exclusive.  S
 
 I can't do this whole thing by hand for the huge number of rules in the **Part 2** input `input1219_2.txt`, but I do notice right off the bat that all of the input strings have lengths in multiples of eight.
 
-&#x1F62E;&#x1F914;
+&#x1F914;&#x1F62E;
 
 For a string of length 8, there are 256 possible ways to construct it out of `a`s and `b`s.  I still have my traditional solver code from **Part 1**, which can evaluate from scratch whether a given string satisfies a given rule.
 
