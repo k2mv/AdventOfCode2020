@@ -16,7 +16,7 @@ https://www.reddit.com/r/adventofcode/comments/kgo01p/2020_day_20_solutions/
 
 That led me to look back at the source tiles that I had arranged (the waffle-like grid at the beginning of the output of `20_2.py`) and finally noticed that, while all the tiles were in their correct places, a significant portion of them appeared to be flipped horizontally from their correct orientation.
 
-I tracked the error down to a *single line* in my rotation code in `rotate_and_flip_grid()` (it's commented out now) that was adding an unnecessary flip to the certain tiles during the process of stitching together all the tiles into a master image.
+I tracked the error down to a *single line* in my rotation code in `rotate_and_flip_grid()` (it's commented out now) that was adding an unnecessary flip to certain tiles during the process of stitching together all the tiles into a master image.
 
 The erroneously flipped tiles had corrupted about half of the sea monsters, but the other half survived.  That's what led me to believe initially that I had come upon a correct map when I actually hadn't.  (For a bit of fun, uncomment that line in `rotate_and_flip_grid()` and watch half of the sea monsters magically disappear.  &#x1F605;)
 
