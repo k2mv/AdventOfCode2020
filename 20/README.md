@@ -11,6 +11,7 @@ I ended up in a big rut around 6pm, because I had successfully assembled an imag
 I eventually broke down and looked at the subreddit for photos of what the sea monster image actually looked like:
 
 https://www.reddit.com/r/adventofcode/comments/kgo01p/2020_day_20_solutions/
+
 *(As far as I can tell, the actual numerical solutions aren't posted there)*
 
 That led me to look back at the source tiles that I had arranged (the waffle-like grid at the beginning of the output of `20_2.py`) and finally noticed that, while all the tiles were in their correct places, a significant portion of them appeared to be flipped horizontally from their correct orientation.
